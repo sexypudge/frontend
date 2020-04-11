@@ -6,7 +6,7 @@ before_install:
     - docker build -t luongnv1810/frontend -f Dockerfile.dev .
 
 script:
-    - docker run luongnv1810/frontend npm run test -- --coverage
+    - docker run luongnv1810/frontend npm run test -- --coverage --exit
 env:
     - YARN_GPG=no
       
