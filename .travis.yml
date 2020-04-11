@@ -7,3 +7,6 @@ before_install:
 
 script:
     - docker run luongnv1810/frontend npm run test -- --coverage
+env:
+    - YARN_GPG=no
+      
